@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
-"""Modulo que define a una clase cuadrado con tamaño privado"""
+"""Module that defines a Square class with a private size."""
 
 
 class Square:
-    """Representa un cuadrado"""
+    """Represents a square."""
 
     def __init__(self, size):
-        """Inicialisar un cuadrdo privado."""
+        """Initializes a square with a private size."""
         self.__size = size
-        
