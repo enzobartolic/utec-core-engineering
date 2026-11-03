@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
-"""Modulo que define una clase cuadrado con una validacion del tamaño"""
+"""Módulo que define una clase Square con un tamaño privado validado."""
+
 
 class Square:
-    """Representa a un cuadrado"""
+    """Representa un cuadrado."""
 
     def __init__(self, size=0):
-        """Inicialisar a un cuadredo con la validacion de tamaño privado"""
-        if not isintance(size, int):
-            raise TypeError(size, int):
+        """Inicializa un cuadrado con un tamaño privado validado."""
+        if not isinstance(size, int):
+            raise TypeError("size must be an integer")
         if size < 0:
-            raise ValueError("size muste be >= 0")
+            raise ValueError("size must be >= 0")
         self.__size = size
